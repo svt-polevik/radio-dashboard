@@ -13,7 +13,8 @@ RUN apt-get update && apt-get install -y nodejs
 RUN apt-get clean && rm -rf /tmp/* /var/tmp/*
 
 RUN git clone https://github.com/ABTSoftware/SciChart.JS.Examples SciChart.JS
-RUN cd SciChart.JS
+RUN cd SciChart.JS\\Examples
 RUN ls
+RUN npm install
 RUN node -v
 RUN npm -v
